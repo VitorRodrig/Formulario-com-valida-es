@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Validação de formulário</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="left-side">
+            <img src="assets/images/corpative.jpg" alt="">
+        </div>
+        <div class="right-side">
+            <h1>Crie uma conta</h1>
+
+            <form id="form-validator">
+                <label for="">
+                    Seu nome:<br>
+                    <input type="text" name="name" id="input-name" data-rules="required">
+                    <p class="erroName">Preencha o campo acima!</p>
+                </label>
+                <label for="">
+                    Seu E-mail:<br>
+                    <input type="email" name="email" id="input-email">
+                    <p class="erroEmail">Preencha o campo ou insira os dados de e-mail corretamente</p>
+                </label>
+                <label for="">
+                    Sua Senha:<br>
+                    <input type="password" name="password" id="input-password">
+                    <p class="erroPassword">Preencha o campo acima!</p>
+                    <p class="minDigitPassword">Sua senha deve conter no mínimo 8 digitos</p>
+                </label>
+                <label for="">
+                    Confirme sua senha:<br>
+                    <input type="password" name="password" id="inputConfirm-password">
+                    <p class="erroRepeatPassword">Preencha o campo acima!</p>
+                    <p class="erroCoincide">As senhas não coincidem</p>
+                </label>
+                <label for="">
+                    <input type="submit" value="Cadastrar" class="btn">
+                    <p class="erro">Preencha o campo acima!</p>
+                </label>
+                <div>
+                    Já tem uma conta? <a href="">Faça login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+<script src="assets/js/script.js"></script>
+</body>
+</html>
